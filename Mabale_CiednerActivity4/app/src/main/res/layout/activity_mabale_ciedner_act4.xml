@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mabale_Ciedner_Act_4"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/themes"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Theme"
+            android:textSize="20sp"
+            />
+        <RadioButton
+            android:id="@+id/light"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIGHT MODE"
+            />
+        <RadioButton
+            android:id="@+id/dark"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="DARK MODE"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICATION"
+        android:textSize="20sp"
+        />
+    <CheckBox
+        android:layout_marginStart="10dp"
+        android:id="@+id/allow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow Push Notifications"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/profile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Profile Details"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/emailT"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:autofillHints="emailAddress"
+        />
+    <EditText
+        android:id="@+id/nickanameT"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nickname"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="300dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save"
+        />
+</LinearLayout>
